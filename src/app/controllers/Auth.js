@@ -18,6 +18,7 @@ router.post('/register', (req, res) => {
   const { email, name, password } = req.body;
   let isAdmin = false;
   if (email == 'adm@adm.com') {
+    //If utilizado para separar administradores de usuários.
     isAdmin = true;
   }
 
